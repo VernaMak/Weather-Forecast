@@ -140,7 +140,7 @@ export default function Home() {
           </div>
           <div className={styles.name_cnt}>
             <a
-              href=""
+              href="https://vernamai.ca/graphic-design-project/"
               target="_blank"
               rel="noopener noreferrer"
             className={styles.name}>
