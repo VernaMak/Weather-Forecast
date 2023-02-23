@@ -1,4 +1,4 @@
-.main {
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -131,15 +131,15 @@
 }
 
 /* Conic Gradient Animation */
-.thirteen::before {
+/* .thirteen::before {
   animation: 6s rotate linear infinite;
   width: 200%;
   height: 200%;
   background: var(--tile-border);
-}
+}  */
 
 /* Inner Square */
-.thirteen::after {
+/* .thirteen::after {
   inset: 0;
   padding: 1px;
   border-radius: var(--border-radius);
@@ -149,7 +149,93 @@
     rgba(var(--tile-end-rgb), 1)
   );
   background-clip: content-box;
+} */
+
+.main {
+  background-color: #efe1ce;
+  height: 100vh;
 }
+
+.logo_cnt {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.data_item {
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 300px;
+  align-items: center;
+  gap: 35px;
+  line-height: 1.2;
+
+}
+
+.p {
+  color: #4a3d38;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.tem_text {
+  color: #ba826a;
+  font-size: 35px;
+}
+
+.weather_text {
+  color: #ba826a;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.data_cnt {
+ 
+  background-color: azure;
+  border: 2px solid black;
+  box-shadow: 10px 10px 0px 0px  #4a3d38;
+  border-radius: 10px;
+  
+}
+
+.description {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: 360px;
+
+}
+
+.des_text {
+  color:#4a3d38;
+  font-family:monospace;
+  font-size: 20px;
+ 
+  
+}
+.name {
+  color:#ba826a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.name_cnt {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -175,6 +261,10 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+.main {
+  height: 100%;
+}
+
   .content {
     padding: 4rem;
   }
@@ -233,6 +323,7 @@
     );
     background-clip: padding-box;
     backdrop-filter: blur(24px);
+    background-color:#ba826a;
   }
 
   .description div {
@@ -247,11 +338,34 @@
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
+    
   }
+
+  .logo {
+   
+    align-items: center;
+    width: 200px;
+    height: 200px;
+  }
+  
+
+
 }
+
+
+
+
+
+
+
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
+  .main {
+    height: 100%;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
