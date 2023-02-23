@@ -9,6 +9,8 @@ import axios from 'axios';
 
 export default function Home() {
 
+  var name = process.env.NEXT_PUBLIC_NAME;
+
   const apiKey = "59bdff9f21fe8b6bc8ebcdc0c2f5f666";
   const location = "vancouver";
   const units = "metric";
@@ -165,6 +167,7 @@ export default function Home() {
         <div className={styles.data_item} >
           {data}
         </div>
+        {name}
       </main>
     </>
   )
