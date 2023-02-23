@@ -10,8 +10,9 @@ import axios from 'axios';
 export default function Home() {
 
   // var name = process.env.NEXT_PUBLIC_NAME;
-  const apiKey = process.env.API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
+  // const apiKey = "59bdff9f21fe8b6bc8ebcdc0c2f5f666";
   const location = "vancouver";
   const units = "metric";
 
