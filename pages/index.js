@@ -11,7 +11,7 @@ export default function Home() {
 
   // var name = process.env.NEXT_PUBLIC_NAME;
   var apiKey = process.env.NEXT_PUBLIC_API_KEY;
-  console.log(apiKey)
+ 
 
 
   const location = "vancouver";
@@ -114,13 +114,13 @@ export default function Home() {
   }
 
   useEffect(() => {
-      if(grabWeather.current === true) {
+      // if(grabWeather.current === true) {
         fetchWeather();
-      }
+      // }
 
-      return () => {
-        grabWeather.current = true;
-      }
+      // return () => {
+      //   grabWeather.current = true;
+      // }
   },[]);
 
   const current = new Date();
